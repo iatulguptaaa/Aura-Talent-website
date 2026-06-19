@@ -1,0 +1,182 @@
+:root {
+    --primary-blue: #1b3b5a;
+    --teal: #3b9b9b;
+    --light-blue: #e0f2f1;
+    --white: #ffffff;
+    --dark-text: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--white);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo h1 {
+    color: var(--primary-blue);
+    font-size: 1.8rem;
+}
+
+.logo span {
+    color: var(--teal);
+    font-weight: 300;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--teal);
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--light-blue), var(--white));
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    color: var(--primary-blue);
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--teal);
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: var(--teal);
+    color: var(--white);
+    padding: 12px 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--primary-blue);
+}
+
+.section-container {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--primary-blue);
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.bg-light {
+    background-color: #f9fdfd;
+}
+
+.bg-blue {
+    background-color: var(--primary-blue);
+}
+
+.text-white {
+    color: var(--white) !important;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    border-top: 4px solid var(--teal);
+}
+
+.card h4 {
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-response {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #4CAF50; /* Green for success */
+}
+
+footer {
+    background-color: #11263c;
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
